@@ -1,0 +1,122 @@
+:root {
+    --bg-primary: #6f7285;
+    --bg-light: #b0c4de;
+    --bg-dark: #4372Aa;
+    --bg-border: #a9acb6;
+    --text-dark: #333;
+    --danger-color: #d9534f;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+background: var(--bg-primary);
+font-family: sans-serif;
+}
+
+.container {
+    min-height: calc(100vh - 50px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    padding: 10px 0;
+}
+
+input[type="text"]{
+    display: block;
+    width: 420px;
+    border-top: none;
+    border-bottom: 2px solid var(--bg-border);
+    border-right: none;
+    border-left: 1px;
+    background: transparent;
+    padding: 4px;
+    color: var(--bg-light);
+    outline: none;
+    margin: 15px auto;
+}
+.add-grocery-list,
+.grocery-items-container {
+    text-align: center;
+    min-height: 150px;
+    min-width: 450px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2.8PX 2.2PX rgba(0, 0, 0, 0.34),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.48),
+    0 12.5px 10px rgba(0, 0, 0, 0.6),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    margin-bottom: 20px;
+    padding: 0px 25px;
+}
+.add-grocery-list{
+background: var(--bg-dark);
+color: var(--bg-light);
+}
+.grocery-items-container {
+    color: var(--bg-dark);
+    background: var(--bg-light);
+}
+
+.add-grocery-list .btn {
+ border: 2px solid var(--bg-light);
+ color: var(--bg-light);
+}
+.grocery-items-container .btn{
+    border: 2px solid var(--bg-dark);
+    color: var(--bg-dark);
+}
+ul {
+    list-style-type: none;
+}
+.grocery-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0;
+}
+.btn-container {
+    margin: 6px 0;
+}
+.btn{
+    padding: 6px 120px;
+    text-transform: capitalize;
+    border: 1px solid;
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 400;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.del {
+    color: var(--danger-color);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:active, .del:active {
+    transform: scale(.92);
+}
+.alert {
+    color: darkred;
+    padding: 6px 0;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    padding: 10px 0;
+    color: var(--bg-light);
+}
