@@ -47,7 +47,7 @@ input[type="text"]{
 .grocery-items-container {
     text-align: center;
     min-height: 150px;
-    min-width: 450px;
+    min-width: 400px;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 0 2.8PX 2.2PX rgba(0, 0, 0, 0.34),
